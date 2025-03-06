@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation Menu -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-lg font-bold">GameZone</h1>
+            <button class="bg-blue-500 px-4 py-2 rounded">Menu</button>
+        </div>
+    </nav>
+
+    <!-- Game Section -->
+    <div class="container mx-auto mt-6 p-4 text-center">
+        <iframe id="gameFrame" src="https://example.com/game" class="w-full h-96 border-2 border-gray-700"></iframe>
+        <div class="mt-4 flex justify-center space-x-4">
+            <button id="fullscreenBtn" class="bg-green-500 px-4 py-2 rounded">Fullscreen</button>
+            <button id="installBtn" class="bg-blue-500 px-4 py-2 rounded">Install PWA</button>
+        </div>
+    </div>
+
+    <!-- Game Details -->
+    <div class="container mx-auto mt-6 p-4">
+        <h2 class="text-xl font-bold">Game Title</h2>
+        <p class="text-gray-300">This is a fun and exciting game!</p>
+    </div>
+
+    <!-- More Games -->
+    <div class="container mx-auto mt-6 p-4">
+        <h2 class="text-xl font-bold mb-4">More Games</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div class="bg-gray-800 p-2 rounded">
+                <img src="https://via.placeholder.com/150" alt="Game 1">
+                <p class="text-center">Game 1</p>
+            </div>
+            <div class="bg-gray-800 p-2 rounded">
+                <img src="https://via.placeholder.com/150" alt="Game 2">
+                <p class="text-center">Game 2</p>
+            </div>
+            <!-- Add 18 more game thumbnails here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 mt-6 text-center">
+        <a href="#" class="text-gray-400 mx-2">Privacy Policy</a> |
+        <a href="#" class="text-gray-400 mx-2">DMCA</a> |
+        <a href="#" class="text-gray-400 mx-2">Terms</a>
+    </footer>
+
+</body>
+</html>
