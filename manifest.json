@@ -1,7 +1,7 @@
 {
     "name": "GameZone",
     "short_name": "GameZone",
-    "start_url": "https://agristack-up.github.io/nk/",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#1F2937",
